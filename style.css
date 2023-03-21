@@ -20,16 +20,7 @@
 body {
   background-color: #41b7e6;
 }
-.pedicle {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  margin-left: -10px; /* half of the width */
-  width: 25px;
-  height: 160px;
-  background-color: #008000; /* green */
-  border-radius: 10px 10px 0 0;
-}
+
 .flower {
   position: relative;
   width: 9em;
