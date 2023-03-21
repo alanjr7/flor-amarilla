@@ -22,7 +22,7 @@ body {
 }
 .pedicle {
   position: absolute;
-  bottom: 215px;
+  bottom: 0;
   left: 50%;
   margin-left: -10px; /* half of the width */
   width: 25px;
