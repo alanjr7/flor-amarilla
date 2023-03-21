@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+
+@-moz-keyframes spin {
+  100% {
+    -moz-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+body {
+  background-color: #41b7e6;
+}
+.pedicle {
+  position: absolute;
+  bottom: 215px;
+  left: 50%;
+  margin-left: -10px; /* half of the width */
+  width: 25px;
+  height: 160px;
+  background-color: #008000; /* green */
+  border-radius: 10px 10px 0 0;
+}
+.flower {
+  position: relative;
+  width: 9em;
+  height: 9em;
+  border-radius: 50%;
+  padding: 0;
+  -webkit-animation: spin 4s linear infinite;
+  -moz-animation: spin 4s linear infinite;
+  animation: spin 4s linear infinite;
+}
+.flower > * {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -3em;
+  width: 6em;
+  height: 6em;
+  border-radius: 50%;
+}
+.flower > *:nth-of-type(1) {
+  transform: rotate(0deg) translate(4.5em) rotate(0deg);
+}
+.flower > *:nth-of-type(2) {
+  transform: rotate(72deg) translate(4.5em) rotate(-72deg);
+}
+.flower > *:nth-of-type(3) {
+  transform: rotate(144deg) translate(4.5em) rotate(-144deg);
+}
+.flower > *:nth-of-type(4) {
+  transform: rotate(216deg) translate(4.5em) rotate(-216deg);
+}
+.flower > *:nth-of-type(5) {
+  transform: rotate(288deg) translate(4.5em) rotate(-288deg);
+}
+.flower > *:nth-of-type(1) {
+  background-color: #FFD700; /* gold */
+}
+.flower > *:nth-of-type(2) {
+  background-color: #ffe600; /* orange */
+}
+.flower > *:nth-of-type(3) {
+  background-color: #FFFF00; /* yellow */
+}
+.flower > *:nth-of-type(4) {
+  background-color: #FFC300; /* yellow-orange */
+}
+.flower > *:nth-of-type(5) {
+  background-color: #FEDC56; /* pale yellow */
+}
+
+.flower_box {
+  width: 9em;
+  margin: 150px auto;
+}
+.pistil {
+  position: relative;
+  width: 6em;
+  height: 6em;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  top: -115px;
+  left: 25px;
+}
+
+.message{
+  padding-left: 23%;
+  padding-right: 20%;
+  font-family: 'Roboto', sans-serif;
+  color:white;
+  font-size: 25px;
+}
